@@ -1,0 +1,25 @@
+***Mongoose tutorials***
+====db.js====
+1. mongoose connection with db is made
+2. in a variable mongoose.connect was done with "connection string" and then+catch
+3. mongoose.connect variable exported
+
+====index.js====
+1. express was required, called in app var, and app.use(express.json()) called
+2. mongoose connection was imported
+3. mongooseConnection.then+.catch is done, in the .then errHanlder is written, app.use used the errHanlder and app.listen. .catch simply clg err message.
+4. route handler is imported. in .then app.use(route, route handler)
+
+
+====route handler====
+1. express imported, router is made express.Router(), schema file imported.
+2. router.get/post/put/delete are made
+3. try+catch was used in get/post/put/delete
+4. await for the db actions, if-else were used, when actions is true = res.status(200).json(action variable)
+5. router is exported
+
+
+====schema====
+1. mongoose is required
+2. in a variable mongoose.Schema({})
+3. module.exports = mongoose.model('Collection name in singular', variable);
